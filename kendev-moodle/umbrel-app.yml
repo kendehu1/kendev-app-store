@@ -1,47 +1,26 @@
-version: "3.7"
-
-services:
-
-  app_proxy:
-    environment:
-      # Umbrel format: <app-id>_<docker-service-name>_1
-      APP_HOST: moodle_moodle_1
-      APP_PORT: 8080 
-
-  mariadb:
-    image: mariadb:10.11
-    user: "1000:1000"
-    init: true
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: "WJ7k2!e4xAqS9tpG44@u"
-      MYSQL_DATABASE: "moodle"
-      MYSQL_USER: "moodle"
-      MYSQL_PASSWORD: "ghZ3#P2vV8!qNf9Le@r"
-    volumes:
-      - dbdata:/var/lib/mysql
-    command:
-      - --transaction-isolation=READ-COMMITTED
-      - --log-bin=mysql-bin
-      - --binlog-format=ROW
-
-  moodle:
-    image: bitnami/moodle:4.3.2
-    user: "1000:1000"
-    init: true
-    restart: always
-    depends_on:
-      - mariadb
-    ports:
-      - "4319:8080"        
-    environment:
-      MOODLE_DATABASE_HOST: mariadb
-      MOODLE_DATABASE_USER: moodle
-      MOODLE_DATABASE_PASSWORD: "ghZ3#P2vV8!qNf9Le@r"
-      MOODLE_DATABASE_NAME: moodle
-    volumes:
-      - moodledata:/bitnami/moodle
-
-volumes:
-  dbdata:
-  moodledata:
+manifestVersion: 1
+id: kendev-moodle
+name: Moodle
+tagline: Online Learning With The World's Most Popular LMS
+icon: https://cdn.carleton.edu/uploads/sites/114/2022/11/moodle-logo-1.png
+category: Development
+version: "1.0.0"
+port: 4319
+description: >-
+  The unofficial Moodle app
+  (this may not be maintained after first release)
+  
+developer: kendev
+website: https://moodle.org
+submitter: Kendev
+submission: https://github.com/kendehu1/kendev-app-store
+repo: https://github.com/kendehu1/kendev-app-store
+support: https://github.com/kendehu1/kendev-app-store/issues
+gallery:
+  - https://moodle.org/pluginfile.php/8622785/block_html/content/Moodle-Community-Moodle-Moot-2022%20%281%29.png
+releaseNotes: >-
+  Released the Moodle app, please note the app is NOT developed or maintained by me.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
