@@ -32,17 +32,17 @@ services:
     depends_on:
       - mariadb
     ports:
-      - "4319:8080"
+      - "8391:8080"
     environment:
       DB_TYPE: mariadb
       DB_HOST: mariadb
       DB_NAME: moodle
       DB_USER: moodle
       DB_PASS: "ghZ3#P2vV8!qNf9Le@r"
-      MOODLE_USERNAME: admin
-      MOODLE_PASSWORD: "VeryStrongPassw0rd!"
+      MOODLE_USERNAME: moodle
+      MOODLE_PASSWORD: "CHANGEME"
       MOODLE_EMAIL: "admin@example.com"
-      SITE_URL: "http://<YOUR‑HOST‑IP>:4319"
+      SITE_URL: "http://<YOUR‑HOST‑IP>:8391"
       REVERSEPROXY: "false"
       SSLPROXY: "false"
     volumes:
