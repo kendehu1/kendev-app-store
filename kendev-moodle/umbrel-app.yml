@@ -22,5 +22,5 @@ releaseNotes: >-
   Released the Moodle app, please note the app is NOT developed or maintained by me.
 dependencies: []
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "moodle"
+defaultPassword: "CHANGEME"
