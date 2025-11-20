@@ -13,15 +13,13 @@ The unofficial Moodle app
 developer: kendev
 website: https://moodle.org
 submitter: Kendev
-submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
-support: https://github.com/getumbrel/umbrel-hello-world-app/issues
+submission: https://github.com/kendehu1/kendev-app-store
+repo: https://github.com/kendehu1/kendev-app-store
+support: https://github.com/kendehu1/kendev-app-store/issues
 gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://moodle.org/pluginfile.php/8622785/block_html/content/Moodle-Community-Moodle-Moot-2022%20%281%29.png
 releaseNotes: >-
-  Released the Moodle app, please note the app is NOT developed or maintained by me-
+  Released the Moodle app, please note the app is NOT developed or maintained by me.
 dependencies: []
 path: ""
 defaultUsername: ""
