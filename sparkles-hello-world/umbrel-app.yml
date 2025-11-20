@@ -1,20 +1,18 @@
 manifestVersion: 1
-id: sparkles-hello-world
-name: Hello World
-tagline: Replace this tagline with your app's tagline
-icon: https://svgur.com/i/mvA.svg
-category: Development
+id: kendev-moodle
+name: Moodle
+tagline: Online Learning With The World's Most Popular LMS
+icon: https://cdn.carleton.edu/uploads/sites/114/2022/11/moodle-logo-1.png
+category: Social
 version: "1.0.0"
-port: 4000
+port: 4319
 description: >-
-  Add your app's description here.
+The unofficial Moodle app
+(this may not be maintained after first release)
 
-
-  You can also add newlines!
-
-developer: Umbrel
-website: https://umbrel.com
-submitter: Umbrel
+developer: kendev
+website: https://moodle.org
+submitter: Kendev
 submission: https://github.com/getumbrel/umbrel-hello-world-app
 repo: https://github.com/getumbrel/umbrel-hello-world-app
 support: https://github.com/getumbrel/umbrel-hello-world-app/issues
@@ -23,7 +21,7 @@ gallery:
   - https://i.imgur.com/yyVG0Jb.jpeg
   - https://i.imgur.com/yyVG0Jb.jpeg
 releaseNotes: >-
-  Add what's new in the latest version of your app here.
+  Released the Moodle app, please note the app is NOT developed or maintained by me-
 dependencies: []
 path: ""
 defaultUsername: ""
