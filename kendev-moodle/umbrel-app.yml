@@ -5,7 +5,7 @@ tagline: Online Learning With The World's Most Popular LMS
 icon: https://cdn.carleton.edu/uploads/sites/114/2022/11/moodle-logo-1.png
 category: Development
 version: "1.0.0"
-port: 4319
+port: 8391
 description: >-
   The unofficial Moodle app
   (this may not be maintained after first release)
