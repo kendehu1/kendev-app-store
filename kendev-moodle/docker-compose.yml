@@ -3,8 +3,7 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      # Umbrel format: <app-id>_<docker-service-name>_1
-      APP_HOST: moodle_moodle_1
+      APP_HOST: kendev-moodle_moodle_1
       APP_PORT: 8080
 
   mariadb:
@@ -42,7 +41,7 @@ services:
       MOODLE_USERNAME: moodle
       MOODLE_PASSWORD: "CHANGEME"
       MOODLE_EMAIL: "admin@example.com"
-      SITE_URL: "http://<YOUR‑HOST‑IP>:8391"
+      SITE_URL: "http://192.168.1.42:8391"  # replace with your Umbrel IP
       REVERSEPROXY: "false"
       SSLPROXY: "false"
     volumes:
@@ -51,3 +50,4 @@ services:
 volumes:
   dbdata:
   moodledata:
+
