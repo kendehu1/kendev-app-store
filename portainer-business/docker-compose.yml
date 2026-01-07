@@ -7,7 +7,7 @@ services:
       APP_PORT: 9000
 
   docker:
-    image: docker:27.2.0-dind@sha256:f9f72ad901a78f27be922b2d320bbc263174f12919c1b37e6a01f828fa904565
+    image: portainer/portainer-ee:2.33.6
     privileged: true
     network_mode: host
     stop_grace_period: 1m
