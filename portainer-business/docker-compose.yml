@@ -7,7 +7,7 @@ services:
       APP_PORT: 9000
 
   docker:
-    image: portainer/portainer-ee:2.33.6
+    image: docker:27.2.0-dind
     privileged: true
     network_mode: host
     stop_grace_period: 1m
@@ -27,7 +27,7 @@ services:
       - ${APP_DATA_DIR}/data/docker:/data
 
   portainer:
-    image: portainer/portainer-ce:2.33.6@sha256:4786931dc7c588ff1c242696fe1eb3f7f9c5dafb136b6c713aff7745dd5bd407
+    image: portainer/portainer-ee:2.33.6
     command: --host unix:///var/run/docker.sock --admin-password-file=/default-password
     restart: on-failure
     volumes:
