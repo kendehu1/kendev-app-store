@@ -2,7 +2,7 @@ manifestVersion: 1
 id: portainer-business
 name: Portainer
 tagline: Portainer
-icon: https://cdn.carleton.edu/uploads/sites/114/2022/11/moodle-logo-1.png
+icon: https://avatars.githubusercontent.com/u/22225832
 category: Development
 version: "1.0.0"
 port: 9000
@@ -17,7 +17,7 @@ submission: https://github.com/kendehu1/kendev-app-store
 repo: https://github.com/kendehu1/kendev-app-store
 support: https://github.com/kendehu1/kendev-app-store/issues
 gallery:
-  - https://moodle.org/pluginfile.php/8622785/block_html/content/Moodle-Community-Moodle-Moot-2022%20%281%29.png
+  - https://avatars.githubusercontent.com/u/22225832
 releaseNotes: >-
   Released the Portainer app, please note the app is NOT developed or maintained by me.
 dependencies: []
